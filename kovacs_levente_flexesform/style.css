@@ -1,0 +1,57 @@
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    max-width: 1000px;
+    margin: auto;
+}
+
+header, footer {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+header {
+    border-bottom: 2px solid black;
+}
+
+footer {
+    border-top: 2px solid black;
+}
+
+nav {
+    flex: 0 0 200px;
+    border-right: 2px solid black;
+}
+
+li {
+    list-style: none;
+    padding-left: 0;
+}
+
+article {
+    flex: 1 1 auto;
+}
+
+fieldset {
+    max-width: 500px;
+}
+
+form div {
+    display: flex;
+}
+
+form div label {
+    flex: 0 0 100px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex: 0 0 100%;
+        border-bottom: 2px solid black;
+    }
+}

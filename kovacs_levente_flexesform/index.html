@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kovács Levente</title>
+</head>
+<body>  
+    <main>
+        <header>
+            <h1>Form és flexbox</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html">menü</a></li>
+                <li><a href="index.html">menü2</a></li>
+                <li><a href="index.html">menü3</a></li>
+            </ul>
+        </nav>
+        <article>
+            <form>
+                <fieldset class="personal">
+                    <legend>Személyes adatok</legend>
+                    <div>
+                        <label for="username">Név: </label>
+                        <input type="text" id="username" placeholder="vezetéknév keresztnév">
+                    </div>
+                    <div>
+                        <label for="pswd">Jelszó: </label>
+                        <input type="password" id="pswd" placeholder="Jelszo123!">
+                    </div>
+                    <div>
+                        <label for="email">E-mail: </label>
+                        <input type="email" id="email" placeholder="email@email.com">
+                    </div>
+                </fieldset>
+                <fieldset class="gender">
+                    <legend>Nem</legend>
+                    <div>
+                        <label for="man">Férfi</label>
+                        <input type="radio" name="gender" id="men">
+                    </div>
+                    <div>
+                        <label for="woman">Nő</label>
+                        <input type="radio" name="gender" id="woman">
+                    </div>
+                </fieldset>
+                <fieldset class="preferences">
+                    <legend>egyéb</legend>
+                    <div>
+                        <label for="data" style="flex-basis: 200px; font-size: 4px;">Ne add el az adataimat (haszontalan gomb)</label>
+                        <input type="checkbox" id="data">
+                    </div>
+                    <div>
+                        <label for="cookies" style="flex-basis: 200px;">Elfogadom a sütiket</label>
+                        <input type="checkbox" id="cookies">
+                    </div>
+                    <div>
+                        <label for="captcha" style="flex-basis: 200px;">Nem vagyok robot</label>
+                        <input type="checkbox" id="captcha" class="btn">
+                    </div>
+                </fieldset>
+                <fieldset class="data">
+                    <legend>Adatbegyüjtő egység</legend>
+                    <div>
+                        <label for="dog">Kutyád neve:</label>
+                        <select id="dog">
+                            <!--tisztában vagyok vele, hogy ezt nem így kell használni-->
+                            <option value="buksi">Buksi</option>
+                            <option value="univerzum">Univerzum pusztító</option>
+                            <option value="pamacs">Pamacs</option>
+                            <option value="gergo">Gergő</option>
+                            <option value="mas">valami mas</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="age">Kor: </label>
+                        <input type="number" id="age">
+                    </div>
+                    <div>
+                        <label for="everything">Minden más:</label>
+                        <textarea id="everything" style="height: 200px;">Csak írj ide adatot amit szeretnél, hogy el adjunk (pl.: 27 éves vagyok, bankártya számom: 12345678 27/05 123, Lakcímem a Budapest, utca utca 12)</textarea>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Küldés">
+            </form>
+        </article>
+        <footer>
+            <p>Kovács Levente</p>
+        </footer>
+    </main>
+</body>
+</html>
